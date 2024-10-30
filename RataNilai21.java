@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class RataNilai21 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int i, j, nilaiMhs = 0;
-        double totalNilai, rataNilai = 0;
+        int i, j;
+        float nilaiMhs = 0, totalNilai, rataNilai = 0;
 
         i=1;
         while (i<=5){
@@ -14,9 +14,9 @@ public class RataNilai21 {
                 System.out.print("Nilai ke-" +j + "=");
                 nilaiMhs=sc.nextInt();
                 totalNilai+=nilaiMhs;
-        rataNilai=totalNilai/5;
     
     } 
+    rataNilai=totalNilai/5;
     System.out.println("Rata-rata Nilai Mahasiswa ke " +i+ "=" + rataNilai);
     i++;
 }
